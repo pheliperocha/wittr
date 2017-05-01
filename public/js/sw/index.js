@@ -1,3 +1,7 @@
 self.addEventListener('fetch', function(event) {
-    console.log(event.request);
+    event.respondWith(
+        new Response('<h1 class="a-winner-is-me">PhelipeRocha</h1>', {
+            headers: {'Content-Type': 'text/html; charset=utf-8'}
+        })
+    );
 });
